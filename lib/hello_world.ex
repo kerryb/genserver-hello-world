@@ -1,5 +1,5 @@
 defmodule HelloWorld do
-  def hello do
-    IO.puts "Hello World #{HelloWorld.Counter.next :hello}"
+  def hello(n) do
+    IO.puts "Hello World #{n}"
   end
 end
