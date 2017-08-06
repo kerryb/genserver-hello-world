@@ -7,6 +7,7 @@ defmodule HelloWorld.Application do
     children = [
       {HelloWorld.Counter, {:hello, 1}},
       {HelloWorld.Timer, {}},
+      {HelloWorld, {}},
     ]
 
     opts = [strategy: :one_for_one, name: HelloWorld.Supervisor]
